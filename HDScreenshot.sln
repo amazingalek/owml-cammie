@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWML.Cammie", "OWML.Cammie\OWML.Cammie.csproj", "{5297997D-88CA-49FF-B897-E9680C89BFDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDScreenshot", "HDScreenshot\HDScreenshot.csproj", "{5297997D-88CA-49FF-B897-E9680C89BFDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

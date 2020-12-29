@@ -4,9 +4,9 @@ using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
 
-namespace Cammie
+namespace HDScreenshot
 {
-    public class Cammie : ModBehaviour
+    public class Mod : ModBehaviour
     {
         private string _folder;
         private int _size;
@@ -18,10 +18,10 @@ namespace Cammie
             {
                 _size = 1;
             }
-            ModHelper.Console.WriteLine($"Set size to {_size}");
+            ModHelper.Console.WriteLine($"Set screenshot size to {_size}");
         }
 
-        private void Start()
+        public void Start()
         {
             _folder = $"{ModHelper.Manifest.ModFolderPath}/Screenshots";
 
@@ -31,7 +31,7 @@ namespace Cammie
             }
         }
 
-        private void Update()
+        public void Update()
         {
             if (Input.GetKeyUp(KeyCode.P))
             {
