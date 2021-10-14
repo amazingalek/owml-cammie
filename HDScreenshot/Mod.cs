@@ -3,6 +3,7 @@ using System.IO;
 using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace HDScreenshot
 {
@@ -33,7 +34,7 @@ namespace HDScreenshot
 
         public void Update()
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Keyboard.current[Key.P].wasPressedThisFrame)
             {
                 var path = $"{_folder}/Screenshot-{DateTime.Now:yyyy-MM-dd-HH-mm-ss-ffff}.png";
                 ModHelper.Console.WriteLine($"Taking screenshot {path}");
